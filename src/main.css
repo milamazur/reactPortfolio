@@ -1,0 +1,47 @@
+
+.lightTheme {
+    background-color: #E1EBEE;
+    color: black;
+}
+
+.darkTheme {
+
+    background-color: #130b30;
+    color: white;
+
+}
+
+.skill {
+    font-size: 6rem;
+
+    margin-bottom: 30px;
+    padding: 25px;
+    /*opacity: 0.93;*/
+    border: 1px solid #ec4899;
+    /*vertical-align: middle;*/
+    text-align: center;
+    border-radius: 5px;
+    /*display: table;*/
+    /*box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);*/
+    /*overflow: hidden;*/
+    transition: all 0.4s ease 0s ;
+
+}
+.skill:hover {
+    transform: scale(1.05) ;
+    /*overflow: hidden ;*/
+    /*border: 2px solid rgba(197, 115, 230, 0.883);*/
+    box-shadow: 2px 2px 2px 2px rgba(89, 31, 112, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
