@@ -25,7 +25,7 @@ const PersonalInfo: FunctionComponent = () => {
                     <MdEmail /><p>mazurmilka@gmail.com</p>
                 </li>
                 <li className="flex place-items-center space-x-6 pb-2 pt-6 cvButton">
-                    <a href="/path/to/your/cv.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="/src/assets/CV_MilaMazur_nl.pdf" target="_blank" rel="noopener noreferrer">
                         <button className="flex justify-center font-bold p-2 bg-yellow-200 text-black no-underline items-center text-center">View my CV!</button>
                     </a>
                 </li>

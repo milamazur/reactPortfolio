@@ -28,3 +28,4 @@ const AccordionItem: FunctionComponent<AccordionItemProps> = ({children, title, 
 }
 
 export default AccordionItem
+

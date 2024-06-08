@@ -13,7 +13,6 @@ export const AccordionContext = createContext<IAccordionContext>({
     },
 })
 interface AccordionProps extends PropsWithChildren {
-    // defaultOpenKey?: string
     images: IImages[]
 }
 const Accordion: FunctionComponent<AccordionProps> = ({children, images}) => {

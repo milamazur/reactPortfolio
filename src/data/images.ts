@@ -22,13 +22,6 @@ import img18 from '../images/graphic/littletail6.jpg'
 
 const images: IImages[] = [
     {
-        title: 'Programming',
-        id: 'myId4',
-        pictures: [
-
-        ]
-    },
-    {
         title: 'Illustrations',
         id: 'myId1',
         pictures: [

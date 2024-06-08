@@ -6,7 +6,28 @@
     padding: 14px 10px;
 }
 
+.toggleContent {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
 
+.toggleContent div {
+    font-weight: 500;
+    padding: 16px 10px 10px 16px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.sliderImages {
+    max-width: 40rem;
+}
+  
 
 @media (max-width: 480px) {
     .accordionItemButton {
