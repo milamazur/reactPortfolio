@@ -8,11 +8,11 @@ const Graphic: FunctionComponent<GraphicProps> = () => {
     return (
         <div className="w-60 text-center">
             <div className="grid grid-cols-2 w-60 place-items-center">
-                <SiAdobeillustrator className="skill"/>
-                <SiAdobephotoshop className="skill"/>
-                <SiAdobepremierepro className="skill"/>
-                <SiAdobeaftereffects className="skill"/>
-                <SiAdobeindesign className="skill"/>
+                <SiAdobeillustrator className="skill" title="Adobe Illustrator"/>
+                <SiAdobephotoshop className="skill" title="Adobe Photoshop"/>
+                <SiAdobepremierepro className="skill" title="Adobe PremierePro"/>
+                <SiAdobeaftereffects className="skill" title="Adobe Affter Effects"/>
+                <SiAdobeindesign className="skill" title="Adobe InDesign"/>
             </div>
         </div>
     )
