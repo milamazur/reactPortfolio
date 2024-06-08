@@ -14,8 +14,9 @@ const TabsPersonal: FunctionComponent = () => {
                     <div
                         role="tab"
                         key={type}
-                        className={`text-2xl px-2 py-1 border-b-2 mb-16 mr-10
-                        ${active === type ? 'border-blue-500 text-pink-500 opacity-100 cursor-pointer' : 'border-transparent cursor-pointer'}`}
+                        className={`tabText px-2 sm:px-3 py-1 border-b-2 mb-6 sm:mb-16 mr-2 sm:mr-10
+                        ${active === type? 'border-blue-500 text-pink-500 opacity-100 cursor-pointer' : 'border-transparent cursor-pointer'}
+                        sm:flex-shrink-0`}
                         onClick={() => setActive(type)}
                     >
                         {type}

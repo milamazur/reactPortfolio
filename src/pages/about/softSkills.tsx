@@ -3,22 +3,22 @@ import './about.css'
 
 const SoftSkills: FunctionComponent = () => {
     return (
-        <div className="softSkills">
-            <ul className=" pl-10 pb-10">
+        <div className="softSkills  ">
+            <ul className=" pl-10 pb-10 textSize">
                 <li className="flex place-items-center space-x-6 pb-2">
-                    <p className="text-lg">Creative thinking</p>
+                    <p>Creative thinking</p>
                 </li>
                 <li className="flex place-items-center space-x-6 pb-2">
-                    <p className="text-lg">Attention to detail</p>
+                    <p>Attention to detail</p>
                 </li>
                 <li className="flex place-items-center space-x-6 pb-2">
-                    <p className="text-lg">Organization</p>
+                    <p>Organization</p>
                 </li>
                 <li className="flex place-items-center space-x-6 pb-2">
-                    <p className="text-lg">Integrity</p>
+                    <p>Integrity</p>
                 </li>
                 <li className="flex place-items-center space-x-6 pb-2">
-                    <p className="text-lg">Approachable</p>
+                    <p>Approachable</p>
                 </li>
             </ul>
         </div>
