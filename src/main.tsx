@@ -8,8 +8,6 @@ import TopBar from './topBar.tsx'
 import ThemeProvider from './themeProvider.tsx'
 import SocialIconsFooter from './socialIconsFooter.tsx'
 
-
-
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement,
     )

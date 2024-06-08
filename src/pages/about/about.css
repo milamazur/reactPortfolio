@@ -1,0 +1,52 @@
+.tabs {
+    margin: 42px 10px 0px;
+}
+
+.cvButton {
+    margin-bottom: 100px;
+}
+
+.softSkills {
+    height: 354px;
+}
+
+.header{
+    margin-bottom: 24px;
+}
+
+.aboutMe {
+    margin-top: 40px;
+    line-height: 2.5rem; 
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+@media (max-width: 1190px) {
+  
+    .tabs {
+        display: none;
+    }
+    
+    .cvButton {
+        margin-bottom: 10px;
+    }
+    .softSkills {
+        height: 230px;
+    }
+    .aboutMe {
+        margin-top: 40px;
+        line-height: 1.75rem; 
+        padding-left: 14px;
+        padding-right: 14px;
+        font-size: 14px;
+    }
+  }
+
+@media (max-width: 480px) {
+    .header{
+        margin-bottom: 10px;
+    }
+  }
+
+
+  

@@ -29,7 +29,7 @@ const Accordion: FunctionComponent<AccordionProps> = ({children, images}) => {
     return (
         <AccordionContext.Provider value={{currentOpenKey, toggleOpenKey}}>
             <div className="w-screen">
-                <div className=" p-4 m-4 mt-10 ">
+                <div className=" p-4 m-4">
                     {children}
                 </div>
             </div>

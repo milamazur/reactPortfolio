@@ -1,11 +1,10 @@
 import {FunctionComponent, useState} from 'react'
-import Skills from './skills.tsx'
-import Graphic from './graphic.tsx'
-import Languages from './languages.tsx';
+import PersonalInfo from './personalInfo.tsx';
+import SoftSkills from './softSkills.tsx';
 
-const types = ['Software Skills', 'Graphic', 'Languages'];
+const types = ['Personal Information', 'Soft Skills']
 
-const Tabs: FunctionComponent = () => {
+const TabsPersonal: FunctionComponent = () => {
     const [active, setActive] = useState(types[0]);
 
     return (
@@ -23,13 +22,12 @@ const Tabs: FunctionComponent = () => {
                     </div>
                 ))}
             </div>
-            <div className="flex items-center justify-center ">
-                    {active === 'Software Skills' && <Skills/>}
-                    {active === 'Graphic' && <Graphic/>}   
-                    {active === 'Languages' && <Languages/>}
+            <div className="">
+                    {active === 'Personal Information' && <PersonalInfo/>}                 
+                    {active === 'Soft Skills' && <SoftSkills/>}               
             </div>
         </div>
     );
 }
 
-export default Tabs
+export default TabsPersonal

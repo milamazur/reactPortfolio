@@ -27,7 +27,6 @@ const Languages: FunctionComponent = () => {
                 </li>
             </ul>
         </div>
-
     )
 }
 

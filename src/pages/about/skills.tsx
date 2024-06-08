@@ -1,9 +1,7 @@
 import {FunctionComponent} from 'react'
 import { FaHtml5 ,FaCss3Alt, FaJsSquare, FaReact, FaDatabase, FaBootstrap } from "react-icons/fa"
+import { SiBlazor } from 'react-icons/si'
 import { TbBrandCSharp } from "react-icons/tb"
-
-
-
 
 const Skills: FunctionComponent = () => {
 
@@ -17,10 +15,9 @@ const Skills: FunctionComponent = () => {
                 <FaCss3Alt className="skill"/>
                 <FaBootstrap className="skill"/>
                 <FaDatabase className="skill"/>
-
+                <SiBlazor className="skill"/>
             </div>
         </div>
-
     )
 }
 

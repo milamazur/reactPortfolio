@@ -20,25 +20,22 @@ const Typewriter = () => {
                         className="object-cover mt-10"
                     />
                 </div>
-                <div className="md:w-60 font-bold text-4xl ml-16 mt-20 mr-20">
+                <div className="md:w-60 font-bold text-4xl ml-16 mt-10 sm:mt-20 mr-20">
                     <p>HI!</p>
                     <p>I'm Mila</p>
-                    <div className="text-pink-400 mt-5" style={{ visibility: isHovering ? 'visible' : 'hidden' }}>
+                    <div className="text-pink-400 mt-5" style={{ visibility: isHovering? 'visible' : 'hidden' }}>
                         <TypewriterEffect
                             options={{
-                                strings: ["Welcome to my portfolio!"],
+                                strings: ["Welcome to my portfolio"],
                                 autoStart: isHovering,
                                 loop: false,
                             }}
                         />
                     </div>
                 </div>
+
             </div>
         </div>
-
-
-
-
     );
 };
 

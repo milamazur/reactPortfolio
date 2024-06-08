@@ -1,33 +1,27 @@
-import {FunctionComponent} from 'react'
-//import Skills from './skills.tsx'
-//import ProgressBar from './progressBar.tsx'
 import Tabs from './tabs.tsx'
 import meAbout from '../about/meAbout.jpg'
 import {NavLink} from 'react-router-dom'
+import TabsPersonal from './tabsPersonal.tsx'
+import './about.css'
 
-interface AboutProps {
-
-}
-
-const About: FunctionComponent<AboutProps> = () => {
+const About = () => {
     return (
         <div>
             <div className="mt-24">
                 <div className="flex flex-col items-center justify-center">
-                    <h1 className="font-bold text-2xl mb-16">ABOUT ME</h1>
+                    <h1 className="font-bold text-2xl header">ABOUT ME</h1>
                 </div>
             </div>
-
             <div className="flex flex-wrap justify-center">
                 <div className="flex">
                     <div className="flex-shrink max-w-xl m-10">
                         <img
                             src={meAbout}
                             alt="meAbout"
-                            className="rounded-2xl  shadow-xl"
+                            className="rounded-2xl shadow-xl"
                         />
                         <div className="flex-shrink">
-                            <div className=" mt-10 leading-10 pl-6 pr-6"  >
+                            <div className="aboutMe"  >
                                 <p className="mb-4">
                                     I have always been fascinated by the creative process and the beauty it can bring to the world.
                                     This passion led me to pursue a <strong className="underline text-pink-500">Master of Fine Arts in Easel Painting  and Graphic Design </strong> at Nicolaus Copernicus University in Toruń.
@@ -45,15 +39,13 @@ const About: FunctionComponent<AboutProps> = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div className=" ml-6 mr-4 mt-10">
+                <div className="tabs">
+                    <TabsPersonal />
                     <Tabs />
                 </div>
             </div>
         </div>
-
-
     )
 }
 
