@@ -1,6 +1,8 @@
-import {FunctionComponent, useState} from 'react';
+import { FunctionComponent, useState } from 'react';
 import ToggleContent from '../toggleContent.tsx';
 import '../portfolio.css';
+
+import { IllustrationImages } from '../../../data/images.ts';
 
 const Illustrations: FunctionComponent = () => {
     const [isOpen, setIsOpen] = useState(true);
@@ -11,12 +13,9 @@ const Illustrations: FunctionComponent = () => {
             {isOpen && (
                 <div className="w-screen min-h-screen flex items-center justify-center p-4">
                     <div className="flex flex-wrap justify-center maxImage">
-                        <img src={'./illustration/dino2.jpg'} className='mb-10'/> 
-                        <img src={'./illustration/dino4.jpg'} className='mb-10'/> 
-                        <img src={'./illustration/halloween.jpg'} className='mb-10'/> 
-                        <img src={'./illustration/jungle.jpg'} className='mb-10'/> 
-                        <img src={'./illustration/sea.jpg'} className='mb-10'/> 
-                        <img src={'./illustration/tipi.jpg'}/> 
+                        {IllustrationImages.map((imagePath, index) => (
+                            <img key={index} src={imagePath} alt={`illustration ${index + 1}`} className="w-full sm:w-1/2 lg:w-1/3 m-4 max-w-md " />
+                        ))}
                     </div> 
                 </div>
             )}
