@@ -23,7 +23,7 @@ const Graphic: FunctionComponent = () => {
                             <img src={graphic3} className='mb-10'/> 
                             <img src={graphic4} className='mb-10'/> 
                             <img src={graphic5} className='mb-10'/> 
-                            <img src={graphic6} /> 
+                            <img src={graphic6} className=''/> 
                         </div>        
                     </div>
             )}

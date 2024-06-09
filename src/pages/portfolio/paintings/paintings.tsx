@@ -14,7 +14,7 @@ const Paintings: FunctionComponent = () => {
 
     return (
         <div >
-            <ToggleContent children={"Illustrations"} isOpen={isOpen} setIsOpen={setIsOpen}/>
+            <ToggleContent children={"Paintings"} isOpen={isOpen} setIsOpen={setIsOpen}/>
             {isOpen && (
                 <div className="w-screen min-h-screen flex items-center justify-center p-4">
                 <div className="flex flex-wrap justify-center maxImage">

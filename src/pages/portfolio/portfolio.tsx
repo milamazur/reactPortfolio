@@ -49,16 +49,9 @@ const Portfolio: FunctionComponent = () => {
                 </div>
             )}
             </div>
-
-            <div >
-                <Graphic/>
-            </div>            
-            <div >
-                <Illustrations/>
-            </div>          
-            <div>
-             <Paintings/>
-            </div>
+            <Illustrations/>
+            <Paintings/>
+            <Graphic/>
         </div>
     );
 }
