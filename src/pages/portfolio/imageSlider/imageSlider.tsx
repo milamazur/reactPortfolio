@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import './imageSlider.css';
+import '../portfolio.css';
 
 interface ImageSliderProps {
     projects: string[];

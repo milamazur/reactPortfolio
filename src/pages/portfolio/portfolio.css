@@ -27,7 +27,12 @@
 .sliderImages {
     max-width: 57rem;
 }
-
+.maxImage {
+    max-width: 30rem;
+}
+.maxPainting {
+    max-width: 40rem;
+}
 .arrow-left {
     position: 'absolute';
     left: '-40px';

@@ -1,4 +1,5 @@
 import {FunctionComponent, useState} from 'react'
+
 import ToggleContent from './toggleContent.tsx'
 import { Recipes, StockCoach, HonestyBar, PortfolioHTML, Dxomark, VTI } from '../../data/projects.ts';
 
@@ -49,18 +50,16 @@ const Portfolio: FunctionComponent = () => {
             )}
             </div>
 
-            <div className='mb-6'>
+            <div >
                 <Graphic/>
             </div>            
-            <div className='mb-6'>
+            <div >
                 <Illustrations/>
             </div>          
-            <div className='mb-6'>
-                 <Paintings/>
+            <div>
+             <Paintings/>
             </div>
-
         </div>
-
     );
 }
 

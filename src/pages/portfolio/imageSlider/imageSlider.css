@@ -1,7 +1,11 @@
 /* .slider {
     position: relative; 
   } */
-  
+  /* .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
   .arrow-left {
     /* position: absolute; */
     /* left: 0;  */
@@ -16,8 +20,6 @@
   .arrow-left:active {
     border: none;
   }
-  
-  
   
   .arrow-right {
     border: none;

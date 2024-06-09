@@ -1,39 +1,33 @@
-import {FunctionComponent, useState} from 'react'
-import ToggleContent from '../toggleContent.tsx'
-import ill1 from "../../../images/illustration/dino2.jpg"
-import ill2 from "../../../images/illustration/dino4.jpg"
-import ill3 from "../../../images/illustration/halloween.jpg"
-import ill4 from "../../../images/illustration/jungle.jpg"
-import ill5 from "../../../images/illustration/sea.jpg"
-import ill6 from "../../../images/illustration/tipi.jpg"
-
-
+import {FunctionComponent, useState} from 'react';
+import ToggleContent from '../toggleContent.tsx';
+import ill1 from "./illustration/dino2.jpg";
+import ill2 from "./illustration/dino4.jpg";
+import ill3 from "./illustration/halloween.jpg";
+import ill4 from "./illustration/jungle.jpg";
+import ill5 from "./illustration/sea.jpg";
+import ill6 from "./illustration/tipi.jpg";
+import '../portfolio.css';
 
 const Illustrations: FunctionComponent = () => {
-    const [isOpen, setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(true);
 
     return (
         <div >
             <ToggleContent children={"Illustrations"} isOpen={isOpen} setIsOpen={setIsOpen}/>
             {isOpen && (
-                <div className="min-h-screen flex items-center justify-center p-4">
-                    <div className="justify-center">
-                        <div className="flex flex-wrap m-4 mb-10">
-                            <img src={ill1}/> 
-                            <img src={ill2}/> 
-                            <img src={ill3}/> 
-                            <img src={ill4}/> 
-                            <img src={ill5}/> 
-                            <img src={ill6}/> 
-                        </div>        
-                    </div>
+                <div className="w-screen min-h-screen flex items-center justify-center p-4">
+                    <div className="flex flex-wrap justify-center maxImage">
+                        <img src={ill1} className='mb-10'/> 
+                        <img src={ill2} className='mb-10'/> 
+                        <img src={ill3} className='mb-10'/> 
+                        <img src={ill4} className='mb-10'/> 
+                        <img src={ill5} className='mb-10'/> 
+                        <img src={ill6}/> 
+                    </div> 
                 </div>
             )}
         </div>
-
     );
 }
 
 export default Illustrations;
-
-
