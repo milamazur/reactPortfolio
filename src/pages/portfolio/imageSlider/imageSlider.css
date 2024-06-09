@@ -1,0 +1,33 @@
+/* .slider {
+    position: relative; 
+  } */
+  
+  .arrow-left {
+    /* position: absolute; */
+    /* left: 0;  */
+    border: none;
+    outline: none!important;
+  }
+  
+  .arrow-left:hover {
+    color: #ec4899;
+  }
+  
+  .arrow-left:active {
+    border: none;
+  }
+  
+  
+  
+  .arrow-right {
+    border: none;
+    outline: none!important;
+  }
+  
+  .arrow-right:hover {
+    color: #ec4899;
+  }
+  .arrow-right:active {
+    border: none;
+  }
+  

@@ -25,8 +25,22 @@
   }
   
 .sliderImages {
-    max-width: 40rem;
+    max-width: 57rem;
 }
+
+.arrow-left {
+    position: 'absolute';
+    left: '-40px';
+    top: '50%';
+    transform: 'translateY(-50%)';
+  }
+  
+  .arrow-right {
+    position: 'absolute';
+    right: '-40px';
+    top: '50%';
+    transform: 'translateY(-50%)';
+  }
   
 
 @media (max-width: 480px) {

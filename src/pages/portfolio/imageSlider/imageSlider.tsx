@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import './imageSlider.css';
 
 interface ImageSliderProps {
     projects: string[];
@@ -17,9 +19,9 @@ interface ImageSliderProps {
   
     return (
       <div className="slider">
-        <button onClick={prevSlide}>&lt;</button>
+        <button className="arrow-left" onClick={prevSlide}><AiOutlineLeft /></button>
         <img src={projects[currentSlide]} alt={`slide ${currentSlide}`} />
-        <button onClick={nextSlide}>&gt;</button>
+        <button className="arrow-right" onClick={nextSlide}><AiOutlineRight /></button>
       </div>
     );
   };
