@@ -14,7 +14,7 @@ import img11 from '../images/painting/painting5.jpg'
 import img12 from '../images/painting/painting6.jpg'
 
 import img13 from '../images/graphic/Littletail1.jpg'
-import img14 from '../images/graphic/Littletail2.jpg'
+// import img14 from '../images/graphic/Littletail2.jpg'
 import img15 from '../images/graphic/Littletail3.jpg'
 import img16 from '../images/graphic/Littletail4.jpg'
 import img17 from '../images/graphic/Littletail5.jpg'
@@ -89,10 +89,10 @@ const images: IImages[] = [
                 id: 13,
                 imgSrc: img13,
             },
-            {
-                id: 14,
-                imgSrc: img14,
-            },
+            // {
+            //     id: 14,
+            //     imgSrc: img14,
+            // },
             {
                 id: 15,
                 imgSrc: img15,
