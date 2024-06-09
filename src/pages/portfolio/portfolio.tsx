@@ -1,38 +1,25 @@
 import {FunctionComponent, useState} from 'react'
-import {IImages} from '../../models/IImages.ts'
-import Accordion from './accordion.tsx'
-import AccordionItem from './accordionItem.tsx'
-import Images from './images.tsx'
 import ToggleContent from './toggleContent.tsx'
 import { Recipes, StockCoach, HonestyBar, PortfolioHTML, Dxomark, VTI } from '../../data/projects.ts';
 
 
 import ImageSlider from './imageSlider/imageSlider.tsx'
-//import Graphic from './graphic/graphic.tsx'
+import Graphic from './graphic/graphic.tsx'
+import Illustrations from './illustartions/illustrations.tsx'
+import Paintings from './paintings/paintings.tsx'
 
-interface  PortfolioProps {
-    images: IImages[]
-}
 
-const Portfolio: FunctionComponent<PortfolioProps> = ({images}) => {
+const Portfolio: FunctionComponent = () => {
     const [isOpen, setIsOpen] = useState(true)
 
-    const output =[]
-
-    for (const image of images) {
-        output.push((
-            <AccordionItem title={image.title} openKey={image.id}>
-                <Images {...image}/>
-            </AccordionItem>
-        ))
-    }
     return (
         <div className="mt-24" >
             <div className="flex flex-col items-center justify-center">
                 <h1 className="font-bold text-2xl">PORTFOLIO</h1>
                 <p className="max-w-sm mt-5 text-center p-10"> Find some examples of programming projects, illustrations, paintings and graphic design projects I have made over the years.</p>
             </div>
-            <ToggleContent isOpen={isOpen} setIsOpen={setIsOpen}/>
+            <div className='mb-6'>
+            <ToggleContent children={'Programming'} isOpen={isOpen} setIsOpen={setIsOpen}/>
             {isOpen && (
                 <div className="min-h-screen flex items-center justify-center p-4">
                     <div className="justify-center">
@@ -60,10 +47,17 @@ const Portfolio: FunctionComponent<PortfolioProps> = ({images}) => {
                     </div>
                 </div>
             )}
-            {/* <Graphic/> */}
-            <Accordion images={images}>
-                {output}
-            </Accordion>
+            </div>
+
+            <div className='mb-6'>
+                <Graphic/>
+            </div>            
+            <div className='mb-6'>
+                <Illustrations/>
+            </div>          
+            <div className='mb-6'>
+                 <Paintings/>
+            </div>
 
         </div>
 

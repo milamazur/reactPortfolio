@@ -2,15 +2,16 @@ import React from 'react'
 import { AiOutlineDown, AiOutlineUp } from 'react-icons/ai'
 
 interface ToggleContentProps {
+    children: React.ReactNode;
   isOpen: boolean
   setIsOpen: (value: boolean) => void
 }
 
-const ToggleContent: React.FC<ToggleContentProps> = ({ isOpen, setIsOpen }) => {
+const ToggleContent: React.FC<ToggleContentProps> = ({children, isOpen, setIsOpen }) => {
   return (
     <div className="flex justify-center items-center flex-col">
       <div className="flex flex-row items-center justify-start bg-yellow-200 text-black shadow-xl rounded-tl-full rounded-br-full pr-8 pl-8">
-        <div className="accordionItemButton font-bold">Programming</div>
+        <div className="accordionItemButton font-bold">{children}</div>
         <div
           className="cursor-pointer ml-3 font-bold"
           onClick={() => setIsOpen(!isOpen)}
