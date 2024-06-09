@@ -7,6 +7,7 @@ import {BrowserRouter} from 'react-router-dom'
 import TopBar from './topBar.tsx'
 import ThemeProvider from './themeProvider.tsx'
 import SocialIconsFooter from './socialIconsFooter.tsx'
+import ScrollToTop from './components/scrolltop.tsx'
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement,
@@ -20,6 +21,7 @@ root.render(
                     <Navbar/>
                     <Routing/>
                     <SocialIconsFooter/>
+                    <ScrollToTop />
                 </ThemeProvider>
             </BrowserRouter>
     </StrictMode>,

@@ -1,11 +1,11 @@
 import {FunctionComponent, useState} from 'react'
 import ToggleContent from '../toggleContent.tsx'
-import graphic1 from "./graphic/littletail1.jpg"
-import graphic2 from "./graphic/littletail2.jpg"
-import graphic3 from "./graphic/littletail3.jpg"
-import graphic4 from "./graphic/littletail4.jpg"
-import graphic5 from "./graphic/littletail5.jpg"
-import graphic6 from "./graphic/littletail6.jpg"
+import graphic1 from './graphic/littletail1.jpg'
+import graphic2 from './graphic/littletail2.jpg'
+import graphic3 from './graphic/littletail3.jpg'
+import graphic4 from './graphic/littletail4.jpg'
+import graphic5 from './graphic/littletail5.jpg'
+import graphic6 from './graphic/littletail6.jpg'
 
 
 

@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom'
 
 
 const Text: FunctionComponent = () => {
-    
+
     return (
         <div className=" mt-10 leading-10 pl-16 pr-16 max-w-3xl"  >
             <p><strong>My name is Mila Mazur. </strong>
