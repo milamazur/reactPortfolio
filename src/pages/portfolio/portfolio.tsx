@@ -8,6 +8,7 @@ import { Recipes, StockCoach, HonestyBar, PortfolioHTML, Dxomark, VTI } from '..
 
 
 import ImageSlider from './imageSlider/imageSlider.tsx'
+//import Graphic from './graphic/graphic.tsx'
 
 interface  PortfolioProps {
     images: IImages[]
@@ -59,6 +60,7 @@ const Portfolio: FunctionComponent<PortfolioProps> = ({images}) => {
                     </div>
                 </div>
             )}
+            {/* <Graphic/> */}
             <Accordion images={images}>
                 {output}
             </Accordion>
